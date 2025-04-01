@@ -1,5 +1,5 @@
 {
-    "name": "your-vendor/flarum-marketplace",
+    "name": "mburakdndr/flarum-shop2",
     "description": "A marketplace extension for Flarum",
     "type": "flarum-extension",
     "require": {
