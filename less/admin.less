@@ -1,0 +1,74 @@
+.ProductsPage {
+  &-header {
+    background: #fff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+}
+
+.ProductTable {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  th {
+    font-weight: bold;
+    background: #f8f8f8;
+  }
+}
+
+.ProductListItem {
+  &-actions {
+    .Button {
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.ProductEditModal {
+  .Form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .FormControl {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: @primary-color;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.MarketplacePage {
+  padding: 20px 0;
+
+  &-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
+
+.ProductList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.ProductListItem {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  &-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #238c59;
+    margin-bottom: 10px;
+  }
+
+  &-stock {
+    color: #666;
+    margin-bottom: 15px;
+  }
+}
+
+.CartDropdown {
+  &-count {
+    background: @primary-color;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+  &-content {
+    min-width: 300px;
+    padding: 15px;
+  }
+
+  &-empty {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
+
+  &-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-itemInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  &-itemQuantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+  }
+
+  &-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-weight: bold;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  &-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.CheckoutPage {
+  padding: 20px 0;
+
+  &-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-items {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  &-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &-itemInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-itemQuantity {
+    color: #666;
+    margin: 0 10px;
+  }
+
+  &-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-weight: bold;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 15px;
+  }
+
+  &-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    .Form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .FormControl {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #e8e8e8;
+      border-radius: 4px;
+
+      &:focus {
+        border-color: @primary-color;
+        outline: none;
+      }
+    }
+  }
+}
+
+.PaymentForm {
+  &-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+  }
+
+  &-date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .FormControl {
+      width: 60px;
+      text-align: center;
+    }
+
+    span {
+      color: #666;
+    }
+  }
+}
